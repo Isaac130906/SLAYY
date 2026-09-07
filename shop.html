@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLAYY - Boutique</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <img src="image/Slayy.png" alt="Logo Slayy" class="Logo-Slayy">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="compte.html">Compte</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="panier-btn">🛒 Panier (<span id="compteur-panier">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="marquee-container" style="margin-top: 90px;">
+        <div class="marquee-text" style="font-family: 'Anton', sans-serif;">
+            YOU WILL <span>SLAY</span> YOU WILL <span>SLAY</span> YOU WILL <span>SLAY</span> YOU WILL <span>SLAY</span> YOU WILL <span>SLAY</span>
+        </div>
+    </div>
+
+    <section class="shop-section">
+        <div class="shop-categories">
+            <button class="category-btn active">Tous les articles</button>
+            <button class="category-btn">Hauts</button>
+            <button class="category-btn">Bas</button>
+        </div>
+
+        <div class="cartes-container">
+
+            <a href="produit.html?id=top-red" class="carte" data-category="hauts">
+                <div class="carte-image-wrapper">
+                    <button class="icon-heart">♡</button>
+                    <img src="image/HautRouge.png" alt="Top RED" class="img-principale">
+                    
+                    <img src="image/RedTop.png" alt="Top RED" class="img-secondaire">
+                </div>
+                <div class="carte-info">
+                    <div class="carte-texte">
+                        <p class="carte-nom">Top "HUNT" RED</p>
+                        <p class="carte-prix">44,00€</p>
+                    </div>
+                    <button class="icon-bag">🛍️</button>
+                </div>
+            </a>
+
+            <a href="produit.html?id=pant-red" class="carte" data-category="bas">
+                <div class="carte-image-wrapper">
+                    <button class="icon-heart">♡</button>
+                    <img src="image/ChatGPT Image 30 juin 2026, 15_38_22.png" alt="Pant RED" class="img-principale">
+                   
+                    <img src="image/BasRouge.png" alt="Pant RED" class="img-secondaire">
+                </div>
+                <div class="carte-info">
+                    <div class="carte-texte">
+                        <p class="carte-nom">Pant "HUNT" RED</p>
+                        <p class="carte-prix">44,00€</p>
+                    </div>
+                    <button class="icon-bag">🛍️</button>
+                </div>
+            </a>
+
+            <a href="produit.html?id=top-olive" class="carte" data-category="hauts">
+                <div class="carte-image-wrapper">
+                    <button class="icon-heart">♡</button>
+                    <img src="image/chatgpt-30-06-1159.png" alt="Top OLIVE" class="img-principale">
+                    
+                    <img src="image/Olivetop.png" alt="Top OLIVE" class="img-secondaire">
+                </div>
+                <div class="carte-info">
+                    <div class="carte-texte">
+                        <p class="carte-nom">Top "HUNT" OLIVE</p>
+                        <p class="carte-prix">44,00€</p>
+                    </div>
+                    <button class="icon-bag">🛍️</button>
+                </div>
+            </a>
+
+            <a href="produit.html?id=pant-olive" class="carte" data-category="bas">
+                <div class="carte-image-wrapper">
+                    <button class="icon-heart">♡</button>
+                    <img src="image/BasOlive.png" alt="Pant OLIVE" class="img-principale">
+                    <img src="image/BasOlive2.png" alt="Pant OLIVE" class="img-secondaire">
+                </div>
+                <div class="carte-info">
+                    <div class="carte-texte">
+                        <p class="carte-nom">Pant "HUNT" OLIVE</p>
+                        <p class="carte-prix">44,00€</p>
+                    </div>
+                    <button class="icon-bag">🛍️</button>
+                </div>
+            </a>
+
+            <a href="produit.html?id=top-purple" class="carte" data-category="hauts">
+                <div class="carte-image-wrapper">
+                    <button class="icon-heart">♡</button>
+                    <img src="image/chatgpt-30-06-1160.png" alt="Top PURPLE" class="img-principale">
+                   
+                    <img src="image/RoseTop.png" alt="Top PURPLE" class="img-secondaire">
+                </div>
+                <div class="carte-info">
+                    <div class="carte-texte">
+                        <p class="carte-nom">Top "HUNT" PURPLE</p>
+                        <p class="carte-prix">44,00€</p>
+                    </div>
+                    <button class="icon-bag">🛍️</button>
+                </div>
+            </a>
+
+            <a href="produit.html?id=pant-purple" class="carte" data-category="bas">
+                <div class="carte-image-wrapper">
+                    <button class="icon-heart">♡</button>
+                    <img src="image/ChatGPT Image 30 juin 2026, 15_44_29.png" alt="Pant PURPLE" class="img-principale">
+                    <img src="image/BasRoseToya.png" alt="Pant PURPLE" class="img-secondaire">
+                </div>
+                <div class="carte-info">
+                    <div class="carte-texte">
+                        <p class="carte-nom">Pant "HUNT" PURPLE</p>
+                        <p class="carte-prix">44,00€</p>
+                    </div>
+                    <button class="icon-bag">🛍️</button>
+                </div>
+            </a>
+
+            <a href="produit.html?id=top-grey" class="carte" data-category="hauts">
+                <div class="carte-image-wrapper">
+                    <button class="icon-heart">♡</button>
+                    <img src="image/chatgpt-30-06-1161.png" alt="Top GREY" class="img-principale">
+                    <img src="image/HautGris.png" alt="Top GREY" class="img-secondaire">
+                </div>
+                <div class="carte-info">
+                    <div class="carte-texte">
+                        <p class="carte-nom">Top "TOYA" GREY</p>
+                        <p class="carte-prix">44,00€</p>
+                    </div>
+                    <button class="icon-bag">🛍️</button>
+                </div>
+            </a>
+
+            <a href="produit.html?id=pant-grey" class="carte" data-category="bas">
+                <div class="carte-image-wrapper">
+                    <button class="icon-heart">♡</button>
+                    <img src="image/ChatGPT Image 30 juin 2026, 16_02_04.png" alt="Pant GREY" class="img-principale">
+                    <!-- Ton image personnalisée -->
+                    <img src="image/BasGris.png" alt="Pant GREY" class="img-secondaire">
+                </div>
+                <div class="carte-info">
+                    <div class="carte-texte">
+                        <p class="carte-nom">Pant "TOYA" GREY</p>
+                        <p class="carte-prix">44,00€</p>
+                    </div>
+                    <button class="icon-bag">🛍️</button>
+                </div>
+            </a>
+
+            <a href="produit.html?id=top-navy" class="carte" data-category="hauts">
+                <div class="carte-image-wrapper">
+                    <button class="icon-heart">♡</button>
+                    <img src="image/21-IMG_2915.jpg" alt="Top NAVY" class="img-principale">
+                    <!-- Ton image personnalisée -->
+                    <img src="image/BlackTop.png" alt="Top NAVY" class="img-secondaire">
+                </div>
+                <div class="carte-info">
+                    <div class="carte-texte">
+                        <p class="carte-nom">Top "NAVY" BLACK</p>
+                        <p class="carte-prix">44,00€</p>
+                    </div>
+                    <button class="icon-bag">🛍️</button>
+                </div>
+            </a>
+
+            <a href="produit.html?id=pant-navy" class="carte" data-category="bas">
+                <div class="carte-image-wrapper">
+                    <button class="icon-heart">♡</button>
+                    <img src="image/ChatGPT Image 30 juin 2026, 15_48_31.png" alt="Pant NAVY" class="img-principale">
+                    <!-- Ton image personnalisée -->
+                    <img src="image/23-IMG_3309 (1).jpg" alt="Pant NAVY" class="img-secondaire">
+                </div>
+                <div class="carte-info">
+                    <div class="carte-texte">
+                        <p class="carte-nom">Pant "NAVY" BLACK</p>
+                        <p class="carte-prix">44,00€</p>
+                    </div>
+                    <button class="icon-bag">🛍️</button>
+                </div>
+            </a>
+
+            <a href="produit.html?id=top-black" class="carte" data-category="hauts">
+                <div class="carte-image-wrapper">
+                    <button class="icon-heart">♡</button>
+                    <img src="image/chatgpt-30-06-1158.png" alt="Top BLACK" class="img-principale">
+                    <img src="image/HautNoir.png" alt="Top BLACK" class="img-secondaire">
+                </div>
+                <div class="carte-info">
+                    <div class="carte-texte">
+                        <p class="carte-nom">Top "TOYA" BLACK</p>
+                        <p class="carte-prix">44,00€</p>
+                    </div>
+                    <button class="icon-bag">🛍️</button>
+                </div>
+            </a>
+
+            <a href="produit.html?id=pant-black" class="carte" data-category="bas">
+                <div class="carte-image-wrapper">
+                    <button class="icon-heart">♡</button>
+                    <img src="image/ChatGPT Image 30 juin 2026, 16_31_23.png" alt="Pant BLACK" class="img-principale">
+                    <img src="image/BasNoir.png" alt="Pant BLACK" class="img-secondaire">
+                </div>
+                <div class="carte-info">
+                    <div class="carte-texte">
+                        <p class="carte-nom">Pant "TOYA" BLACK</p>
+                        <p class="carte-prix">44,00€</p>
+                    </div>
+                    <button class="icon-bag">🛍️</button>
+                </div>
+            </a>
+
+            <a href="produit.html?id=top-pink" class="carte" data-category="hauts">
+                <div class="carte-image-wrapper">
+                    <button class="icon-heart">♡</button>
+                    <img src="image/34-IMG_2956.jpg" alt="Top PINK" class="img-principale">
+                    <img src="image/HautRose.png" alt="Top PINK" class="img-secondaire">
+                </div>
+                <div class="carte-info">
+                    <div class="carte-texte">
+                        <p class="carte-nom">Top "TOYA" PINK</p>
+                        <p class="carte-prix">44,00€</p>
+                    </div>
+                    <button class="icon-bag">🛍️</button>
+                </div>
+            </a>
+
+            <a href="produit.html?id=pant-pink" class="carte" data-category="bas">
+                <div class="carte-image-wrapper">
+                    <button class="icon-heart">♡</button>
+                    <img src="image/ChatGPT Image 30 juin 2026, 16_39_41.png" alt="Pant PINK" class="img-principale">
+                    <img src="image/BasRose.png" alt="Pant PINK" class="img-secondaire">
+                </div>
+                <div class="carte-info">
+                    <div class="carte-texte">
+                        <p class="carte-nom">Pant "TOYA" PINK</p>
+                        <p class="carte-prix">44,00€</p>
+                    </div>
+                    <button class="icon-bag">🛍️</button>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <img src="image/Slayy.png" alt="Logo Slayy" class="footer-logo">
+        <ul class="footer-socials">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">Pinterest</a></li>
+        </ul>
+        <p class="footer-mentions">SLAYY par Juan Christopher Clamaran<br>58 Rue De Monceau, 75008 Paris<br>SIRET: 915 154 488 00026<br>&copy; 2026 Slayy — Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

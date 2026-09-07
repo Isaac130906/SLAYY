@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLAYY - Offre Pack</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+        .pack-selection {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 1px solid #eaeaea;
+        }
+
+        .pack-item-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            margin-top: 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .pack-color-selector {
+            margin-bottom: 15px;
+        }
+        
+        .pack-color-selector select {
+            width: 100%;
+            padding: 10px;
+            font-family: 'Poppins', sans-serif;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        .pack-price-display {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <img src="image/Slayy.png" alt="Logo Slayy" class="Logo-Slayy">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="compte.html">Compte</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="panier-btn">🛒 Panier (<span id="compteur-panier">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-section">
+        <div class="product-container">
+            
+            
+            <div class="product-images">
+                <div class="product-image-wrapper">
+                    <!-- Image par défaut : Slayy Duo -->
+                    <img src="image/SlayyDuo.png" alt="Slayy Duo Pack">
+                </div>
+            </div>
+
+           
+            <div class="product-info">
+                <p class="subtitle-clean">Offre Exclusive</p>
+                <h1 class="product-title" style="font-family: 'Anton', sans-serif;">SLAYY DUO</h1>
+                
+                <div class="pack-price-display">
+                    126,00€
+                </div>
+
+                <p class="product-desc">
+                    L'essentiel Baddie. Choisis ton combo parfait avec ce pack Duo incluant un haut et un bas de la collection SLAYY.
+                </p>
+
+               
+                <div class="pack-selection">
+                    <h4 class="pack-item-title">1. Choisis ton Haut</h4>
+                    <div class="pack-color-selector">
+                        <select>
+                            <option value="">-- Couleur du Haut --</option>
+                            <option value="red">Top HUNT - RED</option>
+                            <option value="olive">Top HUNT - OLIVE</option>
+                            <option value="black">Top TOYA - BLACK</option>
+                            <option value="pink">Top TOYA - PINK</option>
+                        </select>
+                    </div>
+                    <div class="size-selector">
+                        <div class="sizes">
+                            <button class="size-btn">XS</button>
+                            <button class="size-btn">S</button>
+                            <button class="size-btn">M</button>
+                            <button class="size-btn">L</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Configuration Article 2 (Le Bas) -->
+                <div class="pack-selection">
+                    <h4 class="pack-item-title">2. Choisis ton Bas</h4>
+                    <div class="pack-color-selector">
+                        <select>
+                            <option value="">-- Couleur du Bas --</option>
+                            <option value="red">Pant HUNT - RED</option>
+                            <option value="olive">Pant HUNT - OLIVE</option>
+                            <option value="black">Pant TOYA - BLACK</option>
+                            <option value="pink">Pant TOYA - PINK</option>
+                        </select>
+                    </div>
+                    <div class="size-selector">
+                        <div class="sizes">
+                            <button class="size-btn">XS</button>
+                            <button class="size-btn">S</button>
+                            <button class="size-btn">M</button>
+                            <button class="size-btn">L</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <button class="add-cart-btn" id="btn-ajouter-panier" style="font-family: 'Anton', sans-serif;">
+                    PRÉCOMMANDER LE PACK 🛍️
+                </button>
+
+                <div class="product-perks">
+                    <div class="perk">📦 Livraison gratuite dès 99€*</div>
+                    <div class="perk">🔒 Paiements sécurisés</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <img src="image/Slayy.png" alt="Logo Slayy" class="footer-logo">
+        <ul class="footer-socials">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">Pinterest</a></li>
+        </ul>
+        <p class="footer-mentions">SLAYY par Juan Christopher Clamaran<br>58 Rue De Monceau, 75008 Paris<br>SIRET: 915 154 488 00026<br>&copy; 2026 Slayy — Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

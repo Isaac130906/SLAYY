@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLAYY - Accueil</title>
+    <!-- Intégration des polices officielles -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <img src="image/Slayy.png" alt="Logo Slayy" class="Logo-Slayy">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="compte.html">Compte</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="panier-btn">🛒 Panier (<span id="compteur-panier">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 1. HERO BANNER -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h2 class="hero-title" style="font-family: 'Anton', sans-serif;">SLAYY, POUR LES BADDIES QUI SLAY</h2>
+            <a href="shop.html" class="hero-button" style="font-family: 'Anton', sans-serif;">DÉCOUVRIR LA NOUVELLE COLLECTION SLAYY</a>
+        </div>
+    </section>
+
+    <div class="marquee-container">
+        <div class="marquee-text" style="font-family: 'Anton', sans-serif;">
+            TRENDING NOW <span>TRENDING NOW</span> TRENDING NOW <span>TRENDING NOW</span> TRENDING NOW
+        </div>
+    </div>
+
+    <!-- 2. BOUTIQUE (BEST SELLERS) -->
+    <section class="shop-section">
+        <div class="cartes-container">
+
+            <a href="produit.html?id=top-red" class="carte">
+                <div class="carte-image-wrapper">
+                    <button class="icon-heart">♡</button>
+                    <img src="image/HautRouge.png" alt="Top RED" class="img-principale">
+                    <img src="image/RedTop.png" alt="Top RED Hover" class="img-secondaire">
+                </div>
+                <div class="carte-info">
+                    <div class="carte-texte">
+                        <p class="carte-nom">Top "HUNT" RED</p>
+                        <p class="carte-prix">44,00€</p>
+                    </div>
+                    <button class="icon-bag">🛍️</button>
+                </div>
+            </a>
+
+            <a href="produit.html?id=pant-red" class="carte">
+                <div class="carte-image-wrapper">
+                    <button class="icon-heart">♡</button>
+                    <img src="image/ChatGPT Image 30 juin 2026, 15_38_22.png" alt="Pant RED" class="img-principale">
+                    <img src="image/BasRouge.png" alt="Pant RED Hover" class="img-secondaire">
+                </div>
+                <div class="carte-info">
+                    <div class="carte-texte">
+                        <p class="carte-nom">Pant "HUNT" RED</p>
+                        <p class="carte-prix">44,00€</p>
+                    </div>
+                    <button class="icon-bag">🛍️</button>
+                </div>
+            </a>
+
+            <a href="produit.html?id=top-olive" class="carte">
+                <div class="carte-image-wrapper">
+                    <button class="icon-heart">♡</button>
+                    <img src="image/chatgpt-30-06-1159.png" alt="Top OLIVE" class="img-principale">
+                    <img src="image/Olivetop.png" alt="Top OLIVE Hover" class="img-secondaire">
+                </div>
+                <div class="carte-info">
+                    <div class="carte-texte">
+                        <p class="carte-nom">Top "HUNT" OLIVE</p>
+                        <p class="carte-prix">44,00€</p>
+                    </div>
+                    <button class="icon-bag">🛍️</button>
+                </div>
+            </a>
+
+            <a href="produit.html?id=pant-olive" class="carte">
+                <div class="carte-image-wrapper">
+                    <button class="icon-heart">♡</button>
+                    <img src="image/BasOlive.png" alt="Pant OLIVE" class="img-principale">
+                    <img src="image/BasOlive2.png" alt="Pant OLIVE Hover" class="img-secondaire">
+                </div>
+                <div class="carte-info">
+                    <div class="carte-texte">
+                        <p class="carte-nom">Pant "HUNT" OLIVE</p>
+                        <p class="carte-prix">44,00€</p>
+                    </div>
+                    <button class="icon-bag">🛍️</button>
+                </div>
+            </a>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="shop.html" class="hero-button" style="border: 1px solid #000; font-family: 'Anton', sans-serif;">VOIR TOUTE LA COLLECTION</a>
+        </div>
+    </section>
+
+    <!-- 3. SECTION OFFRES EXCLUSIVES : DUO & TRIO -->
+    <section class="packs-section">
+        <div class="packs-header">
+            <p class="subtitle-clean">Offres exclusives</p>
+            <h2 style="font-family: 'Anton', sans-serif;">LES PACKS SLAYY</h2>
+        </div>
+        
+        <div class="packs-container">
+            <!-- Pack DUO -->
+            <div class="pack-card">
+                <div class="pack-image">
+                    <img src="image/SlayyDuo.png" alt="Slayy Duo">
+                </div>
+                <div class="pack-info">
+                    <h3 style="font-family: 'Anton', sans-serif;">SLAYY DUO</h3>
+                    <p>Le combo parfait. Choisis 1 Haut + 1 Bas et affirme ton style sans compromis.</p>
+                    <p class="pack-price">126,00€</p>
+                    <a href="pack.html?id=duo" class="pack-btn" style="font-family: 'Anton', sans-serif;">SÉLECTIONNER LE DUO</a>
+                </div>
+            </div>
+
+            <!-- Pack TRIO -->
+            <div class="pack-card">
+                <div class="pack-image">
+                    <img src="image/SlayyTrio.png" alt="Slayy Trio">
+                </div>
+                <div class="pack-info">
+                    <h3 style="font-family: 'Anton', sans-serif;">SLAYY TRIO</h3>
+                    <p>La panoplie complète. 3 pièces incontournables pour un look baddie absolu.</p>
+                    <p class="pack-price">165,00€</p>
+                    <a href="pack.html?id=trio" class="pack-btn" style="font-family: 'Anton', sans-serif;">SÉLECTIONNER LE TRIO</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- 4. SECTION TEASER À PROPOS (ÉDITORIAL) -->
+    <section class="about-teaser-clean">
+        <div class="about-teaser-image">
+            <img src="image/PhotoGroupe.jpg" alt="SLAYY Lifestyle Baddie">
+        </div>
+        <div class="about-teaser-content">
+            <p class="subtitle-clean">L'ADN SLAYY</p>
+            <h2 style="font-family: 'Anton', sans-serif;">BIENVENUE DANS LE CERCLE.</h2>
+            <p>
+                Fondée par <strong>Juan Christopher Clamaran</strong>, SLAYY n'est pas qu'une simple marque de prêt-à-porter : c'est un état d'esprit. Inspirée par l'esthétique Y2K et les codes baddie, notre mission est de rendre le luxe accessible à une communauté de femmes fortes, élégantes et audacieuses.
+            </p>
+            <p>
+                Les mots du fondateur: J’ai créé SLAYY dans le but que les femmes bosseuses « boss lady » et qui s’assument aient une marque qui les représente et qui les mette en valeur. 
+                SLAYY c’est pour les femmes qui veulent shine et qui ne s’excusent pas d’être qui elles sont, elles sont au-dessus des autres.
+            </p>
+            <a href="apropos.html" class="link-clean">DÉCOUVRIR NOTRE HISTOIRE →</a>
+        </div>
+    </section>
+
+    <!-- 5. SECTION NEWSLETTER (MINIMALISTE) -->
+    <section class="newsletter-clean">
+        <div class="newsletter-content">
+            <h2 style="font-family: 'Anton', sans-serif;">REJOINS LE CERCLE PRIVILÉGIÉ</h2>
+            <p>Inscris-toi pour accéder aux précommandes exclusives et aux lancements privés.</p>
+            <form class="newsletter-form-clean" action="#" method="POST">
+                <input type="email" placeholder="Ton adresse email..." required>
+                <button type="submit" style="font-family: 'Anton', sans-serif;">S'INSCRIRE</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="footer" id="contact">
+        <img src="image/Slayy.png" alt="Logo Slayy" class="footer-logo">
+        <ul class="footer-socials">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">Pinterest</a></li>
+        </ul>
+        <p class="footer-mentions">SLAYY par Juan Christopher Clamaran<br>58 Rue De Monceau, 75008 Paris<br>SIRET: 915 154 488 00026<br>&copy; 2026 Slayy — Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+    <div class="footer-payments">
+            <img src="image/Apple_Pay_logo.svg.webp" alt="Visa">
+            <img src="image/Visa_Inc._logo_(2005–2014).png">
+            <img src="image/Paypal_2014_logo.png" alt="PayPal">
+            <img src="image/Google_Pay_Logo.svg.webp" alt="PayPal">
+            
+        </div>
+</body>
+</html>

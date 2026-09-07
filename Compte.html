@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLAYY - Mon Compte</title>
+    <!-- On ajoute la police Anton demandée par le cahier des charges -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles spécifiques pour la page compte (à intégrer dans style.css plus tard si tu veux) */
+        .account-section {
+            padding: 150px 5% 80px;
+            background-color: #ffffff;
+            min-height: 70vh;
+        }
+
+        .account-container {
+            display: flex;
+            max-width: 1000px;
+            margin: 0 auto;
+            gap: 60px;
+        }
+
+        .account-box {
+            flex: 1;
+            padding: 40px;
+            background-color: #f9f9f9;
+            border: 1px solid #eaeaea;
+        }
+
+        .account-title {
+            font-family: 'Anton', sans-serif; /* Police officielle */
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-top: 0;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #000;
+        }
+
+        /* Bouton selon la DA : Anton et Majuscules */
+        .account-btn {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 18px;
+            font-size: 1.1rem;
+            font-family: 'Anton', sans-serif;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        .account-btn:hover {
+            background-color: #f1a9b9; /* Rose SLAYY */
+        }
+
+        @media (max-width: 768px) {
+            .account-container {
+                flex-direction: column;
+                gap: 30px;
+            }
+            .account-section {
+                padding-top: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <img src="image/Slayy.png" alt="Logo Slayy" class="Logo-Slayy">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="compte.html" class="active">Compte</a></li>
+                <li><a href="#" class="panier-btn">🛒 Panier (<span id="compteur-panier">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="account-section">
+        <div class="account-container">
+            
+            <!-- Partie Gauche : Connexion -->
+            <div class="account-box">
+                <h2 class="account-title">DÉJÀ CLIENTE ?</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="login-email">Adresse Email</label>
+                        <input type="email" id="login-email" placeholder="baddie@slayy.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Mot de passe</label>
+                        <input type="password" id="login-password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="account-btn">SE CONNECTER</button>
+                </form>
+            </div>
+
+            <!-- Partie Droite : Création de compte -->
+            <div class="account-box">
+                <h2 class="account-title">CRÉER UN COMPTE</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="reg-prenom">Prénom</label>
+                        <input type="text" id="reg-prenom" placeholder="Ton prénom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-nom">Nom</label>
+                        <input type="text" id="reg-nom" placeholder="Ton nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-email">Adresse Email</label>
+                        <input type="email" id="reg-email" placeholder="Ton email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password">Créer un mot de passe</label>
+                        <input type="password" id="reg-password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="account-btn">REJOINDRE LE CERCLE</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <img src="image/Slayy.png" alt="Logo Slayy" class="footer-logo">
+        <ul class="footer-socials">
+            <li><a href="#">Instagram</a>https://www.instagram.com/slayy.brand</li>
+           
+        </ul>
+        <!-- Mise à jour avec les infos officielles du cahier des charges -->
+        <p class="footer-mentions">SLAYY par Juan Christopher Clamaran<br>58 Rue De Monceau, 75008 Paris<br>SIRET: 915 154 488 00026<br>&copy; 2026 Slayy — Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
