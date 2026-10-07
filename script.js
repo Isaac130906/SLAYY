@@ -238,3 +238,20 @@ if (instagramLink) {
     instagramLink.href = "https://www.instagram.com/slayy.brand?stkn=OTlobzZ6Y2t0Z3d0";
     instagramLink.target = "_blank"; // Ouvre le lien dans un nouvel onglet pour ne pas quitter la boutique
 }
+// ===== GESTION DES FORMULAIRES DE COMPTE =====
+const loginForm = document.getElementById('login-form');
+const registerForm = document.getElementById('register-form');
+
+if (loginForm) {
+    loginForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Bloque l'erreur 404
+        alert("Connexion interceptée ! Le profil sera vérifié via Shopify.");
+    });
+}
+
+if (registerForm) {
+    registerForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Bloque l'erreur 404
+        alert("Création de compte interceptée ! Le profil sera créé dans Shopify.");
+    });
+}
