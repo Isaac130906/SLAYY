@@ -232,3 +232,9 @@ if (pageProduit) {
         if(sizeSelector) sizeSelector.style.display = "none";
     }
 }
+// ===== LIEN INSTAGRAM GLOBAL =====
+const instagramLink = document.getElementById('instagram');
+if (instagramLink) {
+    instagramLink.href = "https://www.instagram.com/slayy.brand?stkn=OTlobzZ6Y2t0Z3d0";
+    instagramLink.target = "_blank"; // Ouvre le lien dans un nouvel onglet pour ne pas quitter la boutique
+}
